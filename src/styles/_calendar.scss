@@ -1,0 +1,161 @@
+@import '_variables';
+
+.section-calendar-conferences {
+  padding: 133px 0 233px;
+}
+
+.header {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.calendar__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 378px);
+  justify-content: space-between;
+  row-gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 25px 35px 40px 30px;
+  height: 100%;
+  background-color: $colorWhite;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+
+  &__date {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  &__logo {
+    margin-bottom: 19px;
+    width: 88px;
+    height: 88px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__descr {
+    margin-bottom: auto;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__address {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__link {
+    align-self: flex-start;
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $colorText;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+      color: $colorPersianBlue;
+
+      svg {
+        fill: $colorPersianBlue;
+      }
+    }
+
+    &:active {
+      color: $colorCobolt;
+
+      svg {
+        fill: $colorCobolt;
+      }
+    }
+
+
+  }
+
+  &__svg {
+    margin-right: 5px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link-actions {
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  &__link-buy {
+    padding: 8px 20px;
+    color: $colorWhite;
+    background-color: $colorPurpleHeart;
+
+    &:focus,
+    &:hover {
+      background-color: $colorPersianBlue;
+    }
+
+    &:active {
+      background-color: $colorCobolt;
+    }
+  }
+
+  &__link-more {
+    padding: 8px 7px;
+    color: $colorPurpleHeart;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+      color: $colorIceSky;
+    }
+
+    &:active {
+      color: $colorPersianBlue;
+    }
+  }
+}
+
+@media (max-width: 1670px) {
+  .section-calendar-conferences {
+    padding: 50px 0 50px;
+  }
+
+  .calendar__list {
+    grid-template-columns: repeat(auto-fill, 32%);
+  }
+}
+
+@media (max-width: 1300px) {
+  .calendar__list {
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+}
+
+@media (max-width: 820px) {
+  .calendar__list {
+    grid-template-columns: 1fr;
+  }
+
+  .card__actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

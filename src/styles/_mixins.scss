@@ -1,0 +1,3 @@
+@mixin transitionColBgCol {
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}

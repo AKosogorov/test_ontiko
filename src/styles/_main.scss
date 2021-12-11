@@ -1,0 +1,57 @@
+@import '_fonts';
+@import '_variables';
+@import '_mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'TT Travels', sans-serif;
+  font-size: 18px;
+  color: $colorText;
+  background-color: #e5e5e5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  @include transitionColBgCol;
+}
+
+svg {
+  transition: fill .3s ease-in-out;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 118px;
+  max-width: 1920px;
+}
+
+@media (max-width: 1800px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+
+

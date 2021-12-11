@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/tttravels-regular-webfont.woff2') format('woff2'),
+       url('../fonts/tttravels-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/tttravels-demibold-webfont.woff2') format('woff2'),
+       url('../fonts/tttravels-demibold-webfont.woff') format('woff');
+}
